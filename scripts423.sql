@@ -4,6 +4,6 @@ FROM student s
 JOIN faculty f ON s.faculty_id = f.id;
 
 -- Получить только студентов, у которых есть аватарки
-SELECT s.*
+SELECT s.name
 FROM student s
-JOIN avatar a ON s.id = a.student_id;
+INNER JOIN avatar a ON s.id = a.student_id;
