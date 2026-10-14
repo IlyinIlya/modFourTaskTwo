@@ -1,7 +1,7 @@
 databaseChangeLog:
   - include:
-      file: changesets/create-id-student-name.yml
+      file: changesets/create-index-student-name.yml
       relativeToChangelogFile: true
   - include:
-      file: changesets/create-id-faculty-name-color.yml
+      file: changesets/create-index-faculty-name-color.yml
       relativeToChangelogFile: true
