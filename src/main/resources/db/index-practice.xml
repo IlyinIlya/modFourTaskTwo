@@ -5,4 +5,18 @@
         xsi:schemaLocation="
             http://www.liquibase.org/xml/ns/dbchangelog
             https://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-latest.xsd">
+
+    <changeSet id="1" author="student">
+        <createIndex indexName="idx_student_name" tableName="student">
+            <column name="name"/>
+        </createIndex>
+    </changeSet>
+
+    <changeSet id="2" author="student">
+        <createIndex indexName="idx_faculty_name_color" tableName="faculty">
+            <column name="name"/>
+            <column name="color"/>
+        </createIndex>
+    </changeSet>
+
 </databaseChangeLog>
